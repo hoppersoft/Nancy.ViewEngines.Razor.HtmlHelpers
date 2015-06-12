@@ -9,17 +9,17 @@ namespace Nancy.ViewEngines.Razor
     {
         public static IHtmlString LabelFor<TModel, TProperty>(this HtmlHelpers<TModel> helper, Expression<Func<TModel, TProperty>> expression)
         {
-            return Label(helper, ExpressionHelper.GetExpressionText(expression));
+            return Label(helper, ExpressionHelper.GetExpessionDisplayName(expression), ExpressionHelper.GetExpressionText(expression));
         }
 
         public static IHtmlString LabelFor<TModel, TProperty>(this HtmlHelpers<TModel> helper, Expression<Func<TModel, TProperty>> expression, object htmlAttributes)
         {
-            return Label(helper, ExpressionHelper.GetExpressionText(expression), htmlAttributes);
+            return Label(helper, ExpressionHelper.GetExpessionDisplayName(expression), ExpressionHelper.GetExpressionText(expression), htmlAttributes);
         }
 
         public static IHtmlString LabelFor<TModel, TProperty>(this HtmlHelpers<TModel> helper, Expression<Func<TModel, TProperty>> expression, IDictionary<string, object> htmlAttributes)
         {
-            return Label(helper, ExpressionHelper.GetExpressionText(expression), TypeHelper.ObjectToDictionary(htmlAttributes));
+            return Label(helper, ExpressionHelper.GetExpessionDisplayName(expression), ExpressionHelper.GetExpressionText(expression), TypeHelper.ObjectToDictionary(htmlAttributes));
         }
 
         public static IHtmlString Label<TModel>(this HtmlHelpers<TModel> helper, string labelText)

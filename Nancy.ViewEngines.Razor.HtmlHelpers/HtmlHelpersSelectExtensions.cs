@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using Nancy.Helpers;
 
-namespace Nancy.ViewEngines.Razor.HtmlHelpers
+namespace Nancy.ViewEngines.Razor
 {
     public static class HtmlHelper
     {

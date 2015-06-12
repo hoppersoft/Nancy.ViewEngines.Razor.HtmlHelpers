@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Nancy.ViewEngines.Razor.HtmlHelpers")]
+[assembly: AssemblyTitle("Nancy.ViewEngines.Razor")]
 [assembly: AssemblyDescription("HTML Helpers for #NancyFx's Razor implementation")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("David Whitney")]
-[assembly: AssemblyProduct("Nancy.ViewEngines.Razor.HtmlHelpers")]
+[assembly: AssemblyProduct("Nancy.ViewEngines.Razor")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,4 +1,4 @@
-﻿namespace Nancy.ViewEngines.Razor.HtmlHelpers
+﻿namespace Nancy.ViewEngines.Razor
 {
     public class HtmlString : NonEncodedHtmlString
     {
